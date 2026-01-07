@@ -7,10 +7,20 @@ const footerLinks = {
   Stack: ["Next.js", "FastAPI", "Postgres + Vector", "Redis + Celery"],
 };
 
+const socialLinks = [
+  { icon: Github, href: "https://github.com/yansh07", label: "GitHub" },
+  { icon: Twitter, href: "https://x.com/yansh_08", label: "Twitter" },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/yansh08/",
+    label: "LinkedIn",
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-background relative overflow-hidden">
-        {/* Subtle background flare for the footer */}
+      {/* Subtle background flare for the footer */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-indigo-900/20 blur-[120px] -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -24,16 +34,20 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-              Forge your future with intelligent job matching. We use heavy-duty AI to stop you from doom-scrolling job boards like it&apos;s 2015.
+              Forge your future with intelligent job matching. We use heavy-duty
+              AI to stop you from doom-scrolling job boards like it&apos;s 2015.
             </p>
             <div className="flex space-x-4">
-              {[Github, Twitter, Linkedin].map((Icon, i) => (
+              {socialLinks.map((social) => (
                 <a
-                  key={i}
-                  href="#"
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
                   className="text-slate-400 hover:text-primary hover:scale-110 transition-all duration-300"
                 >
-                  <Icon className="h-5 w-5" />
+                  <social.icon className="h-5 w-5" />
                 </a>
               ))}
             </div>
@@ -50,7 +64,7 @@ export default function Footer() {
                   {footerLinks.Product.map((item) => (
                     <li key={item}>
                       <Link
-                        href="#"
+                        href="https://x.com/yansh_08"
                         className="text-sm text-slate-400 hover:text-accent transition-colors"
                       >
                         {item}
@@ -76,8 +90,8 @@ export default function Footer() {
               </div>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
-               {/* Extra column if needed, using Company for now */}
-               <div>
+              {/* Extra column if needed, using Company for now */}
+              <div>
                 <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
                   Company
                 </h3>
@@ -85,7 +99,7 @@ export default function Footer() {
                   {footerLinks.Company.map((item) => (
                     <li key={item}>
                       <Link
-                        href="#"
+                        href="https://www.linkedin.com/in/yansh08/"
                         className="text-sm text-slate-400 hover:text-accent transition-colors"
                       >
                         {item}
@@ -99,7 +113,17 @@ export default function Footer() {
         </div>
         <div className="mt-12 border-t border-white/10 pt-8">
           <p className="text-sm text-slate-500 text-center">
-            &copy; {new Date().getFullYear()} SkillForge AI. Built by a Tailwind Hacker. All rights reserved.
+            &copy; {new Date().getFullYear()} SkillForge AI. Built by{" "}
+            <span>
+              <a
+                className="hover:text-gray-300 hover:underline"
+                href="https://x.com/yansh_08
+"
+              >
+                Priyanshu
+              </a>
+            </span>
+            . All rights reserved.
           </p>
         </div>
       </div>

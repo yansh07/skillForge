@@ -79,7 +79,7 @@ export default function Home() {
           <motion.div variants={itemVariants} className="flex justify-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-sm text-indigo-300 mb-8 backdrop-blur-md hover:border-indigo-500/50 transition-colors cursor-crosshair">
               <Rocket className="w-4 h-4 animate-pulse" />
-              <span>🚀 AI-Powered Job Matching.</span>
+              <span> AI-Powered Job Matching.</span>
             </div>
           </motion.div>
 
@@ -120,11 +120,11 @@ export default function Home() {
               Upload Resume & Get Matched
             </motion.button>
             <motion.a
-              href="#how-it-works"
+              href="/signup"
               whileHover={{ x: 5 }}
               className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors px-6 py-3"
             >
-              See the architecture
+              One click apply
               <ArrowRight className="w-4 h-4" />
             </motion.a>
           </motion.div>
