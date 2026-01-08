@@ -42,6 +42,8 @@ venv/
 .venv/
 env/
 ENV/
+.env
+env
 
 # Poetry / Pip
 poetry.lock
