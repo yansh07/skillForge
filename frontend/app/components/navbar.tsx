@@ -48,12 +48,12 @@ export default function Navbar() {
         {/* Auth Buttons */}
         <div className="flex items-center gap-4">
           <Link
-            href="/login"
+            href="/auth/login"
             className="hidden md:block text-sm font-medium text-slate-300 hover:text-white transition-colors"
           >
             Log in
           </Link>
-          <Link href="/signup">
+          <Link href="/auth/signup">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

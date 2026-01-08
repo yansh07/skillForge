@@ -1,0 +1,10 @@
+[MASTER]
+disable=
+    missing-module-docstring,
+    missing-function-docstring,
+    import-order,
+    invalid-name,
+    too-few-public-methods
+
+[FORMAT]
+max-line-length=100
