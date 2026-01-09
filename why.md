@@ -1,0 +1,3 @@
+*"I chose a Decoupled Micro-services Architecture. Next.js handles the Client-Side Rendering and SEO, while FastAPI serves as a Stateless REST API.*
+
+**Since this is an AI-heavy project, FastAPI allows me to leverage Python's ML ecosystem (Hugging Face, spaCy) natively. By keeping the DB logic in the backend, I ensured that my architecture is language-agnostic and scalable for future mobile or third-party integrations. It also centralizes security (JWT validation) in one place."**
