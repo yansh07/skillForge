@@ -47,7 +47,7 @@ export default function LoginPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <button
               type="button"
-              className="inline-flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-white text-slate-900 hover:bg-slate-50 active:scale-[0.98] transition-all duration-200 px-4 py-3 font-medium shadow-sm"
+              className="inline-flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-white text-slate-900 hover:bg-slate-50 active:scale-[0.98] transition-all duration-200 px-4 py-3 font-medium shadow-sm cursor-pointer hover:transition-all hover:translate-y-0.5 hover:duration-300"
               aria-label="Continue with Google"
             >
               <FcGoogle className="text-2xl" />
@@ -55,7 +55,7 @@ export default function LoginPage() {
             </button>
             <button
               type="button"
-              className="inline-flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-slate-900/70 hover:bg-slate-900 active:scale-[0.98] transition-all duration-200 px-4 py-3 font-medium text-slate-100"
+              className="inline-flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-slate-900/70 hover:bg-slate-900 active:scale-[0.98] transition-all duration-200 px-4 py-3 font-medium text-slate-100 cursor-pointer hover:transition-all hover:translate-y-0.5 hover:duration-300"
               aria-label="Continue with GitHub"
             >
               <FaGithub className="text-xl" />
@@ -129,7 +129,7 @@ export default function LoginPage() {
 
             <button
               type="submit"
-              className="group mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-3 font-semibold text-white shadow-lg hover:from-indigo-500 hover:to-purple-500 active:scale-[0.98] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400/60"
+              className="group mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-3 font-semibold text-white shadow-lg hover:from-indigo-500 hover:to-purple-500 active:scale-[0.98] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400/60 hover:transition-all hover:translate-y-0.5 hover:duration-300"
             >
               Enter, if you dare
             </button>

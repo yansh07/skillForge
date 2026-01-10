@@ -18,7 +18,7 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className="fixed top-0 inset-x-0 z-50 h-16 backdrop-blur-lg border-b border-white/10 bg-background/60 supports-[backdrop-filter]:bg-background/10"
     >
-      <div className="max-w-7xl mx-auto px-4sm:px-6 lg:px-8 h-full flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
         {/* Logo Area */}
         <Link href="/" className="flex items-center gap-2 group">
           <div className="relative p-2 bg-white/5 rounded-lg border border-white/10 overflow-hidden group-hover:border-primary/50 transition-colors duration-300">

@@ -124,7 +124,7 @@ export default function Home() {
               whileHover={{ x: 5 }}
               className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors px-6 py-3"
             >
-              One click apply
+              It won&apos;t take long
               <ArrowRight className="w-4 h-4" />
             </motion.a>
           </motion.div>
